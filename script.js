@@ -91,8 +91,6 @@ for (let key of allKey) {
 // Initialize cursor on load
 updateCursor(0);
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 deleteKey.addEventListener("click", function () {
   let textContainerContent = textContainer.innerText;
   if (textContainerContent.length == 0) {
@@ -149,17 +147,3 @@ capsLock.addEventListener("click", function () {
   }
   isCaps = !isCaps;
 });
-
-// for (let key of allKey) {
-//   key.addEventListener("click", function () {
-//     if (
-//       key.classList.contains("delete") ||
-//       key.classList.contains("enter") ||
-//       key.classList.contains("space") ||
-//       key.classList.contains("capslock")
-//     ) {
-//       return;
-//     }
-//     textContainer.innerText += key.innerText;
-//   });
-// }
